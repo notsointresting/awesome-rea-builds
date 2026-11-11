@@ -15,3 +15,26 @@
 .atlas-layout > *, .atlas-layout > div, .toolbar, .category-list { min-width:0; }
 @media (max-width:830px){.atlas-layout{grid-template-columns:minmax(0,1fr)}.category-list{max-width:100%;overflow-x:auto}}
 @media (max-width:610px){.toolbar select{min-width:0;width:0}.toolbar .searchbox{min-width:0}}
+
+/* Curated learning hub — deliberately separate from verified build catalog */
+.resource-section{background:linear-gradient(180deg,#0b1321,#0c1626);border-block:1px solid rgba(117,145,179,.13)}
+.resource-toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:22px 0 14px}
+.resource-toolbar .searchbox{flex:1 1 350px;min-width:220px}
+.resource-toolbar select{min-height:46px;max-width:100%;border:1px solid #35465a;border-radius:9px;padding:0 14px;background:#121e2e;color:#d8e7f7}
+.resource-metadata{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px;color:#94a7bc;font-size:13px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.resource-card{min-width:0;background:#111c2c;border:1px solid #2b4154;border-radius:13px;padding:21px;transition:transform .18s,border-color .18s}
+.resource-card:hover{transform:translateY(-2px);border-color:#62b8cd}
+.resource-card-head{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:15px}
+.resource-type,.resource-scope{font-size:11px;border-radius:5px;padding:5px 7px;background:#22374b;color:#aed1e5}
+.resource-scope{background:#172c2b;color:#9bddc9}
+.resource-title{display:inline-block;font-weight:700;color:#e8f6ff;font-size:17px;text-decoration:none;margin-bottom:9px}
+.resource-title:hover{color:#8beaf1;text-decoration:underline}
+.resource-desc{font-size:13px;line-height:1.65;color:#adbed1;margin:0 0 16px}
+.resource-origin{font-size:11px;color:#849cb4;word-break:break-word}
+.resource-sources{margin-top:24px;border:1px solid #2b4154;border-radius:12px;padding:20px;color:#b2c4d8;font-size:13px;line-height:1.8}
+.resource-sources a{color:#82deeb}
+.resource-empty{padding:30px;text-align:center;color:#aebfd1}
+@media(max-width:950px){.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.resource-grid{grid-template-columns:1fr}.resource-toolbar{display:block}.resource-toolbar select{width:100%;margin-top:10px}.resource-card{padding:17px}}
+@media(prefers-reduced-motion:reduce){.resource-card{transition:none}.resource-card:hover{transform:none}}
