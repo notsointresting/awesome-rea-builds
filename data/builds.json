@@ -1,0 +1,1434 @@
+[
+  {
+    "id": "sketch",
+    "name": "Sketch",
+    "subtitle": "A native infinite canvas rebuilt in Rust",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "Paper desktop design application",
+    "repo": "https://github.com/michaelshimeles/sketch",
+    "demo": "https://site-u66w.vercel.app",
+    "evidence": "https://github.com/michaelshimeles/sketch/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The README explicitly states that Paper's behavior was investigated using REA and Claude Code.",
+    "description": "An independent Rust design canvas with pages, vector tools, planning boards and a desktop-native graphics stack.",
+    "built": "Rust · wgpu · winit · egui",
+    "languages": [
+      "Rust"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "Linux"
+    ],
+    "tags": [
+      "Canvas",
+      "Desktop",
+      "Design"
+    ],
+    "proof": "README documents a demo mode and build commands; the catalog has not independently run the app.",
+    "limitations": "Not a feature-identical copy of Paper. Some interfaces and hardware combinations remain untested by its author.",
+    "run": "cargo build --release\n./target/release/sketch-rs --demo",
+    "featured": true,
+    "reviewed": "2026-11-11",
+    "execution": "Author-documented tests",
+    "accent": "violet"
+  },
+  {
+    "id": "rec-rs",
+    "name": "rec-rs",
+    "subtitle": "A native macOS recording studio",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "OBS Studio",
+    "repo": "https://github.com/michaelshimeles/rec-rs",
+    "demo": "https://rec-rs.vercel.app",
+    "evidence": "https://github.com/michaelshimeles/rec-rs/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The author credits REA and Claude Code for studying OBS and documents the clean-room implementation boundary.",
+    "description": "Rust-based screen and camera recording for macOS, with sources, scenes, settings and a focused native workflow.",
+    "built": "Rust · macOS capture frameworks",
+    "languages": [
+      "Rust"
+    ],
+    "platforms": [
+      "macOS"
+    ],
+    "tags": [
+      "Recording",
+      "Screen capture",
+      "Media"
+    ],
+    "proof": "Build instructions and unit tests are documented in the project README.",
+    "limitations": "Not a drop-in OBS replacement; permissions, hardware and capture modes require local validation.",
+    "run": "./scripts/build.sh\ncargo test",
+    "featured": true,
+    "reviewed": "2026-11-11",
+    "execution": "Author-documented tests",
+    "accent": "coral"
+  },
+  {
+    "id": "hexgrab",
+    "name": "hexgrab",
+    "subtitle": "Color picking, reconstructed from PowerToys",
+    "category": "Developer tools",
+    "kind": "Reconstructed application",
+    "original": "Microsoft PowerToys Color Picker",
+    "repo": "https://github.com/iammukeshm/hexgrab",
+    "demo": "https://github.com/iammukeshm/hexgrab/releases/latest",
+    "evidence": "https://github.com/iammukeshm/hexgrab/blob/main/docs/rea-findings.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The author published an individual REA findings report checked against public PowerToys source.",
+    "description": "Minimal Windows color picker with a keyboard shortcut, pixel sampling and documented feature-level analysis.",
+    "built": "C# · .NET 10",
+    "languages": [
+      "C#"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "tags": [
+      "Utility",
+      "PowerToys",
+      "Tested"
+    ],
+    "proof": "README describes an end-to-end PowerShell test and says eight of nine REA findings were fully correct.",
+    "limitations": "Windows-only; unsigned application releases may display a SmartScreen warning.",
+    "run": "dotnet build hexgrab.slnx",
+    "featured": true,
+    "reviewed": "2026-11-11",
+    "execution": "Author-documented tests",
+    "accent": "mint"
+  },
+  {
+    "id": "desktop-games-nostalgia",
+    "name": "Desktop Games Nostalgia",
+    "subtitle": "A vintage desktop toy, alive again",
+    "category": "Games & preservation",
+    "kind": "Reconstructed application",
+    "original": "Gemtree Desktop Games / Stress Reducers (2000)",
+    "repo": "https://github.com/ucodia/desktop-games-nostalgia",
+    "demo": "https://ucodia.github.io/desktop-games-nostalgia/",
+    "evidence": "https://github.com/ucodia/desktop-games-nostalgia/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The author describes using REA and Ghidra to recover interpreter and asset behavior.",
+    "description": "Recreates a playful Windows desktop toy for macOS and the browser, with documented sprite and runtime recovery.",
+    "built": "Swift · JavaScript · Python",
+    "languages": [
+      "Swift",
+      "JavaScript"
+    ],
+    "platforms": [
+      "macOS",
+      "Web"
+    ],
+    "tags": [
+      "Retro",
+      "Preservation",
+      "Playable demo"
+    ],
+    "proof": "Browser demo and macOS self-test mechanism are linked from its public repository.",
+    "limitations": "Third-party visuals and sounds remain protected by their owners; compatibility is not independently reproduced here.",
+    "run": "See upstream README for macOS and browser setup.",
+    "featured": true,
+    "reviewed": "2026-11-11",
+    "execution": "Author-documented tests",
+    "accent": "amber"
+  },
+  {
+    "id": "ski-or-die",
+    "name": "Ski or Die: Snowball War",
+    "subtitle": "DOS minigame reconstructed with REA",
+    "category": "Games & preservation",
+    "kind": "Reconstructed application",
+    "original": "Ski or Die DOS Snowball War minigame",
+    "repo": "https://github.com/tuunanet/rea-ski-or-die-reconstruction",
+    "demo": null,
+    "evidence": "https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The README includes specific REA CLI/Ghidra steps and analysis notes.",
+    "description": "Playable Rust + SDL2 reconstruction with behavior specifications for throwing, collision and scoring.",
+    "built": "Rust · SDL2 · Ghidra adapter",
+    "languages": [
+      "Rust",
+      "Python"
+    ],
+    "platforms": [
+      "Linux",
+      "Windows"
+    ],
+    "tags": [
+      "DOS",
+      "16-bit",
+      "Reverse engineering"
+    ],
+    "proof": "Source and documented build instructions exist, but the catalog did not reproduce the result.",
+    "limitations": "Only one minigame was reconstructed, with approximated timing and no redistributable original assets.",
+    "run": "See upstream README; original game assets must be supplied from an authorized copy.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "open-claude-ui",
+    "name": "Open Claude UI",
+    "subtitle": "A high-fidelity desktop interface study",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "Claude Desktop user interface",
+    "repo": "https://github.com/Caho1/open-claude-ui",
+    "demo": "https://openclaudeui.com",
+    "evidence": "https://github.com/Caho1/open-claude-ui/blob/main/README-en.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The author attributes the UI investigation to REA and publishes structured technical documentation.",
+    "description": "A library of UI components, visual behavior and interaction details informed by a technical study of a desktop application.",
+    "built": "React · TypeScript",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "tags": [
+      "UI components",
+      "Design system",
+      "Electron"
+    ],
+    "proof": "Open-source code and detailed author-provided investigation records are public.",
+    "limitations": "Reconstruction claims are author-reported and have not been independently validated by this catalog; not affiliated with Claude.",
+    "run": "See upstream README for package setup and examples.",
+    "featured": true,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "coral"
+  },
+  {
+    "id": "ledger-reborn",
+    "name": "Ledger Reborn",
+    "subtitle": "Local-first accounting rethought",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "QuickBooks Desktop for Mac",
+    "repo": "https://github.com/lxistired/ledger-reborn",
+    "demo": null,
+    "evidence": "https://github.com/lxistired/ledger-reborn/blob/main/README.md",
+    "evidenceType": "Author-reported attribution",
+    "evidenceNote": "The project description identifies itself as REA-assisted desktop accounting; detailed reproducibility needs further review.",
+    "description": "An independent local accounting application influenced by research into familiar desktop bookkeeping workflows.",
+    "built": "Desktop application · local ledger",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "tags": [
+      "Accounting",
+      "Local-first",
+      "Productivity"
+    ],
+    "proof": "The public repository describes downloadable builds, but they were not independently executed by this catalog.",
+    "limitations": "Target features, releases and attribution depth need periodic review; do not rely on it for regulated accounting without validation.",
+    "run": "Follow the current upstream installation documentation.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "hyper3d-clone",
+    "name": "Hyper3D Clone",
+    "subtitle": "Exploring a 3D web app's interactions",
+    "category": "Web & 3D",
+    "kind": "Reconstructed application",
+    "original": "Hyper3D Rodin web interface",
+    "repo": "https://github.com/payswapdotorg/hyper3d-clone",
+    "demo": "https://hyper3d-clone.vercel.app",
+    "evidence": "https://github.com/payswapdotorg/hyper3d-clone/blob/main/README.md",
+    "evidenceType": "Author-reported attribution",
+    "evidenceNote": "The repository publicly describes a REA-informed educational reconstruction of web interaction.",
+    "description": "Educational Next.js interface inspired by a browser-based 3D creation service.",
+    "built": "Next.js · Three.js",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "tags": [
+      "3D",
+      "Next.js",
+      "Interface"
+    ],
+    "proof": "A publicly linked web demo exists; functionality and REA provenance require further independent checking.",
+    "limitations": "Not an independently verified equivalent to the original service or its model generation capabilities.",
+    "run": "See upstream README for local development.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "violet"
+  },
+  {
+    "id": "adamterm",
+    "name": "AdamTerm",
+    "subtitle": "A compact terminal study",
+    "category": "Developer tools",
+    "kind": "Reconstructed application",
+    "original": "Ghostty terminal on macOS",
+    "repo": "https://github.com/AdamLinCodes/AdamTerm",
+    "demo": null,
+    "evidence": "https://github.com/AdamLinCodes/AdamTerm/blob/main/README.md",
+    "evidenceType": "Author-reported attribution",
+    "evidenceNote": "The repository describes building a minimal macOS terminal after studying Ghostty with REA.",
+    "description": "A macOS terminal implementation informed by a reverse-engineering investigation of another terminal.",
+    "built": "Native macOS terminal",
+    "languages": [
+      "Swift"
+    ],
+    "platforms": [
+      "macOS"
+    ],
+    "tags": [
+      "Terminal",
+      "macOS",
+      "Developer"
+    ],
+    "proof": "Public source is available; build and terminal compatibility have not been checked here.",
+    "limitations": "The project is experimental and should not be assumed feature-complete or shell-compatible.",
+    "run": "Refer to the upstream repository for setup and current limitations.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "picoprint",
+    "name": "PicoPrint",
+    "subtitle": "A tiny printer gets a desktop driver",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "LX-D02 Bluetooth printer / Funny Print Android app",
+    "repo": "https://github.com/bigtower17/picoprint",
+    "demo": null,
+    "evidence": "https://github.com/bigtower17/picoprint/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "README credits REA for Android app analysis alongside other protocol research.",
+    "description": "Allows a small Bluetooth thermal printer to appear as a regular Windows printer through open-source tooling.",
+    "built": "Go · Windows printing",
+    "languages": [
+      "Go"
+    ],
+    "platforms": [
+      "Windows"
+    ],
+    "tags": [
+      "Bluetooth",
+      "Printing",
+      "Protocols"
+    ],
+    "proof": "Source and compilation commands are documented; hardware has not been independently checked by this catalog.",
+    "limitations": "Requires the compatible printer and local Windows setup; installation has multiple manual steps.",
+    "run": "go build -o tp.exe ./cmd/tp",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "amber"
+  },
+  {
+    "id": "vd-streamer-linux",
+    "name": "VD Streamer Linux",
+    "subtitle": "Bringing desktop VR streaming to Linux",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "Virtual Desktop Streamer for macOS / Windows",
+    "repo": "https://github.com/cudanexus/vd-streamer-linux",
+    "demo": null,
+    "evidence": "https://github.com/cudanexus/vd-streamer-linux/blob/main/README.md",
+    "evidenceType": "Author-reported attribution",
+    "evidenceNote": "The public repository describes an unofficial Linux port built using Claude Code and REA.",
+    "description": "An unofficial effort to make desktop video, audio and microphone streaming work from Linux to supported VR headsets.",
+    "built": "Linux native platform layer",
+    "languages": [
+      "C++"
+    ],
+    "platforms": [
+      "Linux"
+    ],
+    "tags": [
+      "VR",
+      "Linux",
+      "Compatibility"
+    ],
+    "proof": "The project publishes its approach and source code; device compatibility has not been checked here.",
+    "limitations": "Unofficial software with vendor compatibility and redistribution considerations.",
+    "run": "See upstream README for dependencies and supported VR devices.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "rea-studio",
+    "name": "REA Studio",
+    "subtitle": "An interface for the REA toolchain",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "REA MCP tooling",
+    "repo": "https://github.com/theyishaik-lab/rea-studio",
+    "demo": "https://rea-studio.sites.tab.bot/",
+    "evidence": "https://github.com/theyishaik-lab/rea-studio/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The README describes a UI that invokes REA tools through MCP. This is an integration, not a REA-assisted reconstruction.",
+    "description": "Local browser control panel for tools, structured evidence, history and REA MCP schemas.",
+    "built": "Node.js · MCP · Web UI",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Web",
+      "Linux",
+      "macOS"
+    ],
+    "tags": [
+      "MCP",
+      "Tooling",
+      "Analysis"
+    ],
+    "proof": "A static demonstration and setup instructions are published by the author.",
+    "limitations": "The online demo replays recorded responses. Local analysis requires an installed and configured REA environment.",
+    "run": "See upstream README; configure REA and start the local app.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "violet"
+  },
+  {
+    "id": "app-xray",
+    "name": "App X-Ray",
+    "subtitle": "Turn REA evidence into readable reports",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "REA results and application packages",
+    "repo": "https://github.com/Eliot5566/app-xray",
+    "demo": null,
+    "evidence": "https://github.com/Eliot5566/app-xray/blob/main/README.md",
+    "evidenceType": "Primary-source attribution",
+    "evidenceNote": "The README explicitly states that REA performs the underlying analysis and this tool formats findings.",
+    "description": "CLI and report generator for desktop apps, binaries and Android packages, emphasizing findings and caveats.",
+    "built": "Node.js · CLI · Reports",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "tags": [
+      "Reporting",
+      "Analysis",
+      "MCP"
+    ],
+    "proof": "Project source, instructions and tests are documented; no independent scan was performed by the catalog.",
+    "limitations": "Reports inherit uncertainty from REA and cannot certify the security of a target application.",
+    "run": "npm install\nnpm test",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "dx-ball",
+    "name": "DX-Ball sound-panning reconstruction",
+    "subtitle": "Official investigation of x87 sound-panning arithmetic, cross-checking assembly, callers and d",
+    "category": "Official showcases",
+    "kind": "Official case study",
+    "original": "DX-Ball 1.07 Win32 x86 sound function",
+    "repo": "https://rea.tools/showcase/dx-ball/",
+    "evidence": "https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/dx-ball-sound-pan.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Official investigation of x87 sound-panning arithmetic, cross-checking assembly, callers and differential tests.",
+    "built": "Function-level or feature-level investigation",
+    "languages": [
+      "C"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Official showcases",
+      "REA",
+      "Official case study"
+    ],
+    "proof": "Official showcase records a bounded function/feature investigation; not a full app replacement. No catalog-side reproduction.",
+    "limitations": "This is an official focused investigation, not a full application recreation.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "notion-clipboard",
+    "name": "Notion clipboard bridge",
+    "subtitle": "Official investigation traces web editor, Electron preload, IPC and main-process clipboard cal",
+    "category": "Official showcases",
+    "kind": "Official case study",
+    "original": "Notion Desktop 7.6.1 Electron clipboard IPC",
+    "repo": "https://rea.tools/showcase/notion/",
+    "evidence": "https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/notion-clipboard.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Official investigation traces web editor, Electron preload, IPC and main-process clipboard calls; package versions are not fully matched.",
+    "built": "Function-level or feature-level investigation",
+    "languages": [
+      "Varies"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Official showcases",
+      "REA",
+      "Official case study"
+    ],
+    "proof": "Official showcase records a bounded function/feature investigation; not a full app replacement. No catalog-side reproduction.",
+    "limitations": "This is an official focused investigation, not a full application recreation.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "th04",
+    "name": "Touhou TH04 bullet-ring angles",
+    "subtitle": "Official REA and Ghidra examination of fixed-point bullet-angle computations and historical co",
+    "category": "Official showcases",
+    "kind": "Official case study",
+    "original": "Touhou 4 on PC-98, 16-bit DOS executable",
+    "repo": "https://rea.tools/showcase/th04/",
+    "evidence": "https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/th04-bullet-ring.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Official REA and Ghidra examination of fixed-point bullet-angle computations and historical compiler comparisons.",
+    "built": "Function-level or feature-level investigation",
+    "languages": [
+      "C"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Official showcases",
+      "REA",
+      "Official case study"
+    ],
+    "proof": "Official showcase records a bounded function/feature investigation; not a full app replacement. No catalog-side reproduction.",
+    "limitations": "This is an official focused investigation, not a full application recreation.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "aegis-totp",
+    "name": "Aegis authenticator TOTP study",
+    "subtitle": "Official Android investigation locates code-generation methods and checks an independent TOTP ",
+    "category": "Official showcases",
+    "kind": "Official case study",
+    "original": "Aegis Authenticator Android APK 3.4.3",
+    "repo": "https://rea.tools/showcase/aegis/",
+    "evidence": "https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/public/showcase/aegis/index.html",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Official Android investigation locates code-generation methods and checks an independent TOTP implementation against reference vectors.",
+    "built": "Function-level or feature-level investigation",
+    "languages": [
+      "Java"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Official showcases",
+      "REA",
+      "Official case study"
+    ],
+    "proof": "Official showcase records a bounded function/feature investigation; not a full app replacement. No catalog-side reproduction.",
+    "limitations": "This is an official focused investigation, not a full application recreation.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "masked-squares",
+    "name": "DownUnderCTF masked-squares solver",
+    "subtitle": "Official static analysis recovers validation equations",
+    "category": "Official showcases",
+    "kind": "Official case study",
+    "original": "2023 DownUnderCTF stripped ELF flag checker",
+    "repo": "https://rea.tools/showcase/ctf/",
+    "evidence": "https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Official static analysis recovers validation equations; Z3 solves constraints and original challenge process checks the candidate.",
+    "built": "Function-level or feature-level investigation",
+    "languages": [
+      "Python"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Official showcases",
+      "REA",
+      "Official case study"
+    ],
+    "proof": "Official showcase records a bounded function/feature investigation; not a full app replacement. No catalog-side reproduction.",
+    "limitations": "This is an official focused investigation, not a full application recreation.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "terminal",
+    "name": "Terminal — TradingView-inspired charts",
+    "subtitle": "A separate market-terminal implementation informed by passive REA capture and public-chart int",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "Public logged-out TradingView chart page behavior",
+    "repo": "https://github.com/michaelshimeles/terminal",
+    "evidence": "https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "A separate market-terminal implementation informed by passive REA capture and public-chart interaction analysis.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Rust"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Desktop apps",
+      "REA",
+      "Reconstructed application"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "violet"
+  },
+  {
+    "id": "wispr-flow-teardown",
+    "name": "Wispr Flow speech-input teardown",
+    "subtitle": "Uses REA and Ghidra to inspect speech-input and paste mechanics",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Wispr Flow 1.6.1102 Electron and native helper",
+    "repo": "https://github.com/az9713/wispr-flow-rea-teardown",
+    "evidence": "https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Uses REA and Ghidra to inspect speech-input and paste mechanics; includes a bounded local prototype rather than a complete replacement.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "disklens",
+    "name": "DiskLens",
+    "subtitle": "Disk-analysis and treemap implementation informed by REA review of WinDirStat enumeration and ",
+    "category": "Desktop apps",
+    "kind": "Reconstructed application",
+    "original": "WinDirStat 2.5.0 binary and open-source code",
+    "repo": "https://github.com/KarlssonChristoffer/DiskLens",
+    "evidence": "https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Disk-analysis and treemap implementation informed by REA review of WinDirStat enumeration and display behavior.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "C#"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Desktop apps",
+      "REA",
+      "Reconstructed application"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "violet"
+  },
+  {
+    "id": "screenstudio-research",
+    "name": "Screen Studio static research",
+    "subtitle": "Bounded REA Mach-O and JavaScript inspection",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Screen Studio 3.7.3-4540 macOS application",
+    "repo": "https://github.com/Royo-Qiao/screenstudio-rea-research",
+    "evidence": "https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Bounded REA Mach-O and JavaScript inspection; documents timeouts and uncertainty rather than a full recorder rebuild.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "openbattlefield2",
+    "name": "OpenBattlefield2",
+    "subtitle": "Documented REA/Ghidra function-level analysis supporting an open implementation of portions of",
+    "category": "Games & preservation",
+    "kind": "Reconstructed application",
+    "original": "Battlefield 2 1.5 client and rendering DLLs",
+    "repo": "https://github.com/Moxnatiy/OpenBattlefield2",
+    "evidence": "https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Documented REA/Ghidra function-level analysis supporting an open implementation of portions of the Battlefield 2 engine.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "C++"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Games",
+      "REA",
+      "Reconstructed application"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "coral"
+  },
+  {
+    "id": "gunzrs",
+    "name": "GunZRs",
+    "subtitle": "Uses REA and Ghidra to inspect archive formats, native binaries and packing boundaries for a R",
+    "category": "Games & preservation",
+    "kind": "Reconstructed application",
+    "original": "GunZ: The Duel client executable and MRS archives",
+    "repo": "https://github.com/OpenRsG/GunZRs",
+    "evidence": "https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Uses REA and Ghidra to inspect archive formats, native binaries and packing boundaries for a Rust-based recreation.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Rust"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Games",
+      "REA",
+      "Reconstructed application"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "coral"
+  },
+  {
+    "id": "coop-anything",
+    "name": "Co-op Anything",
+    "subtitle": "Research notes locate campaign/multiplayer entry points using REA and Ghidra",
+    "category": "Games & preservation",
+    "kind": "Research & analysis",
+    "original": "C&C3 campaign and World in Conflict multiplayer entry points",
+    "repo": "https://github.com/cranebeaker/coop-anything",
+    "evidence": "https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Research notes locate campaign/multiplayer entry points using REA and Ghidra; not a finished universal co-op patch.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Games",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "coral"
+  },
+  {
+    "id": "open-scrantic",
+    "name": "Open Scrantic",
+    "subtitle": "Rust replacement of a 1990s screensaver",
+    "category": "Games & preservation",
+    "kind": "Reconstructed application",
+    "original": "Johnny Castaway / Screen Antics 1992 screensaver",
+    "repo": "https://github.com/glauberlima/open-scrantic",
+    "evidence": "https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Rust replacement of a 1990s screensaver; author credits REA for understanding resource formats and script behavior.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Rust"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Games",
+      "REA",
+      "Reconstructed application"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "coral"
+  },
+  {
+    "id": "vsl-dsp",
+    "name": "VSL-DSP",
+    "subtitle": "Linux audio driver/DSP work informed by REA/Ghidra investigations of vendor library protocols ",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "PreSonus Universal Control vendor DSP libraries",
+    "repo": "https://github.com/grisuno/VSL-DSP",
+    "evidence": "https://github.com/grisuno/VSL-DSP/blob/e619f0877ffca3c183be37cdd9474f2d7e348ad5/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Linux audio driver/DSP work informed by REA/Ghidra investigations of vendor library protocols and parameters.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "C"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Hardware",
+      "REA",
+      "Interoperability implementation"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "amber"
+  },
+  {
+    "id": "pixel-watch-esim",
+    "name": "Pixel Watch eSIM handoff helper",
+    "subtitle": "A helper for QR/manual eSIM handoff informed by REA-assisted analysis of the companion app's c",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "Google Pixel Watch companion Android APK",
+    "repo": "https://github.com/AllMySlop/pixel-watch-esim-writer",
+    "evidence": "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "A helper for QR/manual eSIM handoff informed by REA-assisted analysis of the companion app's configuration routes.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Hardware",
+      "REA",
+      "Interoperability implementation"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "amber"
+  },
+  {
+    "id": "v5vpn-client",
+    "name": "V5VPN unofficial client research",
+    "subtitle": "Unofficial protocol client informed by static reversing references",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "LeadSec V5VPN 5.3.3 client and gateway protocol",
+    "repo": "https://github.com/hygkui/v5vpn-rea-client",
+    "evidence": "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "The upstream README cites REA as a reverse-engineering reference. This does not establish detailed REA-derived protocol implementation; attribution needs further review.",
+    "description": "Unofficial protocol client informed by static reversing references; exact REA contribution needs careful attribution.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Hardware",
+      "REA",
+      "Interoperability implementation"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "amber"
+  },
+  {
+    "id": "icsee-localmod",
+    "name": "iCSee localmod",
+    "subtitle": "Researches local camera PTZ and lighting controls from stock firmware while preserving vendor ",
+    "category": "Hardware & protocols",
+    "kind": "Interoperability implementation",
+    "original": "XM530 camera Sofia stock firmware",
+    "repo": "https://github.com/Vittuu/icsee-localmod",
+    "evidence": "https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Researches local camera PTZ and lighting controls from stock firmware while preserving vendor drivers.",
+    "built": "Independent implementation; see original repository for details",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Hardware",
+      "REA",
+      "Interoperability implementation"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "amber"
+  },
+  {
+    "id": "netcat-analysis",
+    "name": "OpenBSD netcat binary analysis",
+    "subtitle": "Compares static REA/Ghidra findings with readelf, objdump and other binary-inspection tools.",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Ubuntu netcat-openbsd 1.234-1 stripped binary",
+    "repo": "https://github.com/NullLabTests/OpenBSD_netcat_REA",
+    "evidence": "https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Compares static REA/Ghidra findings with readelf, objdump and other binary-inspection tools.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "rea-on-rea",
+    "name": "REA analyzing REA",
+    "subtitle": "A controlled experiment asks REA to inspect its own package, form predictions and check those ",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Installed rea-agents 6.3.0 package",
+    "repo": "https://github.com/az9713/REA-demo",
+    "evidence": "https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "A controlled experiment asks REA to inspect its own package, form predictions and check those against source.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "rea-groundtruth",
+    "name": "REA Groundtruth",
+    "subtitle": "Tests REA output against known-source Electron and app examples to expose analysis blind spots",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "MongoDB Compass 1.43.4 and Electron fixtures",
+    "repo": "https://github.com/UnknownHacker1/rea-groundtruth",
+    "evidence": "https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Tests REA output against known-source Electron and app examples to expose analysis blind spots.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "rea-lab",
+    "name": "REA Lab",
+    "subtitle": "Publishes controlled experiments, environments, function evidence and a repeatable research ap",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Windows reversing challenges and open-source binaries",
+    "repo": "https://github.com/pablodiazjorge/rea-lab",
+    "evidence": "https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Publishes controlled experiments, environments, function evidence and a repeatable research approach.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "Unknown"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "bzip2-study",
+    "name": "bzip2 stripped-binary case",
+    "subtitle": "Community REA/Ghidra experiment recovers function references and checks them against a symboli",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "bzip2 1.0.8 stripped Linux executable",
+    "repo": "https://github.com/morluto/rea/discussions/2254",
+    "evidence": "https://github.com/morluto/rea/discussions/2254",
+    "evidenceType": "Discussion link not retrieved",
+    "evidenceNote": "Indexed by the community source catalog, but the connected GitHub fetch interface did not retrieve the Discussion content. Verify the discussion yourself before relying on its claims.",
+    "description": "Community REA/Ghidra experiment recovers function references and checks them against a symbolized build.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "C"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "Community-indexed GitHub Discussion; its content was not independently fetched in this review.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "local-27b",
+    "name": "Local 27B REA function analysis",
+    "subtitle": "Community experiment uses a reduced set of REA MCP tools with a local model to analyze a small",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Local C checker with Qwen 27B and REA MCP",
+    "repo": "https://github.com/morluto/rea/discussions/3098",
+    "evidence": "https://github.com/morluto/rea/discussions/3098",
+    "evidenceType": "Discussion link not retrieved",
+    "evidenceNote": "Indexed by the community source catalog, but the connected GitHub fetch interface did not retrieve the Discussion content. Verify the discussion yourself before relying on its claims.",
+    "description": "Community experiment uses a reduced set of REA MCP tools with a local model to analyze a small C program.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "C"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "Community-indexed GitHub Discussion; its content was not independently fetched in this review.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "opensource-rea-lab",
+    "name": "Open-source REA package audit",
+    "subtitle": "Audits npm artifact hashes and analyzes two unchanged package entry files using REA.",
+    "category": "Analysis & evaluations",
+    "kind": "Research & analysis",
+    "original": "Published rea-agents 6.4.0 npm package",
+    "repo": "https://github.com/martinlofranodeoliveira/opensource-rea-lab",
+    "evidence": "https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Audits npm artifact hashes and analyzes two unchanged package entry files using REA.",
+    "built": "Published research notes and experiments",
+    "languages": [
+      "Python"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Analysis",
+      "REA",
+      "Research & analysis"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "This is a technical investigation or proof-of-concept, not a complete production application. Upstream claims and experiments were not independently replicated.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "sky"
+  },
+  {
+    "id": "rea-playbook",
+    "name": "REA Playbook",
+    "subtitle": "Guided Electron analyze–extract–verify pipeline with pinned REA version and real tool-call pro",
+    "category": "Learning & experiments",
+    "kind": "Learning material",
+    "original": "Small eight-file Electron training fixture",
+    "repo": "https://github.com/jinshi666888/rea-playbook",
+    "evidence": "https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Guided Electron analyze–extract–verify pipeline with pinned REA version and real tool-call probes.",
+    "built": "Documentation and learning materials",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Learning",
+      "REA",
+      "Learning material"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Educational workflow, not evidence of a generalizable reverse-engineering success. Re-run exercises with authorized inputs.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "reafuse",
+    "name": "ReaFuse",
+    "subtitle": "Investigates utility-library semantics using REA before implementing independent combinations.",
+    "category": "Learning & experiments",
+    "kind": "Learning material",
+    "original": "Open-source JavaScript library behavior",
+    "repo": "https://github.com/sickpyramid/ReaFuse",
+    "evidence": "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Investigates utility-library semantics using REA before implementing independent combinations.",
+    "built": "Documentation and learning materials",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Learning",
+      "REA",
+      "Learning material"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Educational workflow, not evidence of a generalizable reverse-engineering success. Re-run exercises with authorized inputs.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "rea-spanish",
+    "name": "REA Spanish teaching lab",
+    "subtitle": "Spanish-language guided reconstruction based on REA/Ghidra and reference binary comparisons.",
+    "category": "Learning & experiments",
+    "kind": "Learning material",
+    "original": "Author-owned stripped educational key validator",
+    "repo": "https://github.com/harkiventures/rea-muestra-gratuita",
+    "evidence": "https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Spanish-language guided reconstruction based on REA/Ghidra and reference binary comparisons.",
+    "built": "Documentation and learning materials",
+    "languages": [
+      "Python"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "Learning",
+      "REA",
+      "Learning material"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Educational workflow, not evidence of a generalizable reverse-engineering success. Re-run exercises with authorized inputs.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "sparkdash",
+    "name": "sparkDash REA dashboard",
+    "subtitle": "Remote multi-device dashboard with real REA CLI execution and evidence browsing.",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "REA CLI remote job management",
+    "repo": "https://github.com/MiaAI-Lab/sparkDash",
+    "evidence": "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Remote multi-device dashboard with real REA CLI execution and evidence browsing.",
+    "built": "Integration or developer utility",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "REA ecosystem",
+      "REA",
+      "Tool built for REA"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "rea-safe-agents",
+    "name": "REA Safe Agents",
+    "subtitle": "Isolates agent and REA analysis in separate containers, forwarding allowlisted tool calls.",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "REA/Ghidra/JADX in isolated Docker processes",
+    "repo": "https://github.com/dagoSte/rea-safe-agents",
+    "evidence": "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Isolates agent and REA analysis in separate containers, forwarding allowlisted tool calls.",
+    "built": "Integration or developer utility",
+    "languages": [
+      "Python"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "REA ecosystem",
+      "REA",
+      "Tool built for REA"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "dsh-rea",
+    "name": "dsh-rea",
+    "subtitle": "Adapter connects REA MCP tools to DeepSeek Harness with lazy discovery and scoped permissions.",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "REA 6.8.0 MCP in DeepSeek Harness",
+    "repo": "https://github.com/JeremyWangCY/dsh-rea",
+    "evidence": "https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Adapter connects REA MCP tools to DeepSeek Harness with lazy discovery and scoped permissions.",
+    "built": "Integration or developer utility",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "REA ecosystem",
+      "REA",
+      "Tool built for REA"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  },
+  {
+    "id": "eleven",
+    "name": "Eleven workbench",
+    "subtitle": "Desktop agent tool bridge exposes selected REA analysis functions while restricting write oper",
+    "category": "REA ecosystem",
+    "kind": "Tool built for REA",
+    "original": "Agent desktop workbench and REA/Ghidra native analysis",
+    "repo": "https://github.com/Zfinix/eleven",
+    "evidence": "https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts",
+    "evidenceType": "Source-reported evidence",
+    "evidenceNote": "A public, case-specific source describes the role of REA; claims have not been independently reproduced by this atlas.",
+    "description": "Desktop agent tool bridge exposes selected REA analysis functions while restricting write operations.",
+    "built": "Integration or developer utility",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Not confirmed"
+    ],
+    "tags": [
+      "REA ecosystem",
+      "REA",
+      "Tool built for REA"
+    ],
+    "proof": "The linked source describes the investigation or artifact; our review does not establish a functioning build on our hardware.",
+    "limitations": "Source-reported work; code quality, execution environment, feature completeness and permissions were not independently tested.",
+    "run": "See the linked source for documented instructions and artifacts.",
+    "featured": false,
+    "reviewed": "2026-11-11",
+    "execution": "Not independently tested",
+    "accent": "mint"
+  }
+]
