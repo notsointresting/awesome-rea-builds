@@ -8,7 +8,7 @@ An independent, evidence-linked atlas of **real REA (Reverse Engineer Anything) 
 
 [Explore 44 cases](#full-catalog--44-cases) · [Build Passports](#build-passports) · [Verification policy](METHODOLOGY.md) · [Contribute](CONTRIBUTING.md) · [GitHub Pages setup](docs/GITHUB_PAGES.md)
 
-![Awesome REA Builds desktop screenshot](docs/desktop-preview.png)
+![Awesome REA Builds website overview](docs/site-preview.svg)
 
 </div>
 
@@ -23,7 +23,7 @@ The public sources for 42 of the 44 catalogued cases were retrievable through ou
 
 ## Website
 
-This project is ready for **GitHub Pages**. After you create the public repository at `notsointresting/awesome-rea-builds` and push these files, set **Settings → Pages → Build and deployment → Source: GitHub Actions**. The included workflow will build and publish the self-contained static site on push to `main`.
+This project is ready for **GitHub Pages**. For this public repository, set **Settings → Pages → Build and deployment → Source: GitHub Actions**. The included workflow will build and publish the self-contained static site on push to `main`.
 
 - Run locally: `python3 scripts/build.py && python3 -m http.server 8080 --directory dist`
 - Visit: `http://localhost:8080`
