@@ -28,7 +28,7 @@ def build():
     css = (SRC / "styles.css").read_text(encoding="utf-8")
     js = (SRC / "app.js").read_text(encoding="utf-8")
     payload = json.dumps(projects, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    resource_payload = json.dumps(resource_data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\\\/")
+    resource_payload = json.dumps(resource_data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     output = template.replace("/* INLINE_STYLES */", css).replace("/* INLINE_DATA */", payload).replace("/* INLINE_RESOURCES */", resource_payload).replace("/* INLINE_APP */", js)
     assert "/* INLINE_" not in output
     DIST.mkdir(exist_ok=True)
