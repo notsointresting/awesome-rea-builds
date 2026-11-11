@@ -2,27 +2,11 @@
 
 No Vercel or other hosting platform is used. The repo includes a static HTML generator and an official GitHub Pages Actions workflow.
 
-## 1. Create the GitHub repository
+## Repository and website source
 
-1. Visit <https://github.com/new?name=awesome-rea-builds> while logged in as `notsointresting`.
-2. Name it **awesome-rea-builds**; choose **Public**.
-3. **Do not** initialize with a README/license/gitignore, since this package already contains them.
-4. Click **Create repository**.
+The public GitHub repository is already created and populated: https://github.com/notsointresting/awesome-rea-builds
 
-## 2. Upload the project
-
-Extract the ZIP, then use a terminal in the extracted `awesome-rea-builds` folder:
-
-```bash
-git init
-git checkout -b main
-git add .
-git commit -m "feat: launch 44-case REA builds atlas"
-git remote add origin https://github.com/notsointresting/awesome-rea-builds.git
-git push -u origin main
-```
-
-This requires the repo to exist and Git to be authenticated to your account. Alternatively, upload the extracted files in the GitHub web interface, keeping the `.github/workflows` directory.
+GitHub Actions validation passes, but deployment needs a one-time Pages setting from the repository owner.
 
 ## 3. Enable GitHub Pages
 
