@@ -1,0 +1,32 @@
+name: Validate atlas
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and validate data
+        run: python3 scripts/build.py
+      - name: Check JavaScript
+        run: node --check website/src/app.js
+      - name: Check required strings
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          html=Path('dist/index.html').read_text()
+          assert 'Awesome REA Builds' in html
+          assert 'hexgrab' in html
+          assert 'Aegis' in html
+          assert '/* INLINE_' not in html
+          print('Site validation passed')
+          PY
