@@ -1,0 +1,239 @@
+{
+  "snapshot": "2026-11-11",
+  "scope": "Curated learning and discovery links, not verified REA builds",
+  "sources": [
+    {
+      "title": "REA Investigation Prompts (REAP)",
+      "repo": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts",
+      "description": "Copy-ready task-focused prompts and agent skills, including evidence-first feature tracing and clean-room reconstruction."
+    },
+    {
+      "title": "Awesome-REA",
+      "repo": "reacher-z/Awesome-REA",
+      "url": "https://github.com/reacher-z/Awesome-REA",
+      "description": "Broad REA and reverse-engineering discovery portal with cases, tools, papers and an API. Its large index is not the same as verified builds."
+    },
+    {
+      "title": "Awesome Reverse Engineering",
+      "repo": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/morluto/awesome-reverse-engineering",
+      "description": "General-purpose reverse-engineering tools and learning materials from the REA creator. Most entries are not REA projects."
+    },
+    {
+      "title": "Awesome Reverse Engineer Anything",
+      "repo": "AIshihzong/awesome-reverse-engineer-anything",
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything",
+      "description": "REA vs other AI-reversing attribution checks, compatible projects, and a weekly digest. Assess claims against their primary sources."
+    }
+  ],
+  "resources": [
+    {
+      "id": "rea-getting-started",
+      "title": "Start safely with REA",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#0-install--verify",
+      "description": "Installation/verification prompt; review the setup plan before changing an agent's configuration."
+    },
+    {
+      "id": "rea-feature-tracing",
+      "title": "Trace one feature with evidence",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#2-feature-tracing-any-program",
+      "description": "Find entry points, data flow and observable effects while separating facts from hypotheses."
+    },
+    {
+      "id": "rea-native-analysis",
+      "title": "Investigate native binaries",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#3-native-binary-exploration",
+      "description": "Prompts for executable triage and function-level research; start with static analysis."
+    },
+    {
+      "id": "rea-clean-room",
+      "title": "Specify clean-room reconstructions",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#4-software--feature-cloning",
+      "description": "Write behavior specifications without redistributing proprietary code or assets."
+    },
+    {
+      "id": "rea-game-wasm",
+      "title": "Plan a game-to-WASM port",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#6-game-portability-to-wasm",
+      "description": "Prompts to separate a game's platform dependencies, simulation and browser porting tasks."
+    },
+    {
+      "id": "rea-electron",
+      "title": "Inspect Electron and JavaScript behavior",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#11-electron--javascript",
+      "description": "Workflow ideas for inspecting app bundles, preload bridges and UI feature behavior."
+    },
+    {
+      "id": "rea-prompt-quality",
+      "title": "Evidence-first prompt-writing tips",
+      "category": "Workflows & prompts",
+      "scope": "REA-specific",
+      "origin": "JoasASantos/REA-Prompts",
+      "url": "https://github.com/JoasASantos/REA-Prompts#prompt-writing-tips-why-these-work",
+      "description": "How to narrow a hypothesis, request reproducible evidence and keep unknowns visible."
+    },
+    {
+      "id": "rea-atlas-cases",
+      "title": "Awesome-REA case explorer",
+      "category": "Discovery & evaluation",
+      "scope": "Broader RE ecosystem",
+      "origin": "reacher-z/Awesome-REA",
+      "url": "https://awesomerea.org/cases/",
+      "description": "Broad searchable catalog of reverse-engineering cases; apply this atlas's inclusion rules before adding candidates."
+    },
+    {
+      "id": "rea-atlas-resources",
+      "title": "Awesome-REA resource index",
+      "category": "Discovery & evaluation",
+      "scope": "Broader RE ecosystem",
+      "origin": "reacher-z/Awesome-REA",
+      "url": "https://awesomerea.org/resources/",
+      "description": "Cross-domain tools, protocols, websites, games, binary and firmware resources."
+    },
+    {
+      "id": "rea-atlas-papers",
+      "title": "Awesome-REA papers",
+      "category": "Discovery & evaluation",
+      "scope": "Broader RE ecosystem",
+      "origin": "reacher-z/Awesome-REA",
+      "url": "https://awesomerea.org/papers/",
+      "description": "Research-paper discovery index; papers are supporting references, not build passports."
+    },
+    {
+      "id": "rea-attribution-audit",
+      "title": "Did it really use REA?",
+      "category": "Discovery & evaluation",
+      "scope": "REA-specific",
+      "origin": "AIshihzong/awesome-reverse-engineer-anything",
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything/blob/main/docs/is-it-rea.md",
+      "description": "Case-by-case attribution checks distinguishing direct REA use from other AI-assisted reversing."
+    },
+    {
+      "id": "rea-by-app",
+      "title": "Reimplementations organized by target app",
+      "category": "Discovery & evaluation",
+      "scope": "Broader RE ecosystem",
+      "origin": "AIshihzong/awesome-reverse-engineer-anything",
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything/blob/main/docs/by-app.md",
+      "description": "Find alternatives by the application they replace; verify tool attribution separately."
+    },
+    {
+      "id": "rea-weekly",
+      "title": "New REA and AI-reversing cases",
+      "category": "Discovery & evaluation",
+      "scope": "Broader RE ecosystem",
+      "origin": "AIshihzong/awesome-reverse-engineer-anything",
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything/blob/main/docs/new-this-week.md",
+      "description": "A dated discovery feed; new entries are candidates, not automatic additions."
+    },
+    {
+      "id": "rea-faq",
+      "title": "What is REA?",
+      "category": "Discovery & evaluation",
+      "scope": "REA-specific",
+      "origin": "AIshihzong/awesome-reverse-engineer-anything",
+      "url": "https://github.com/AIshihzong/awesome-reverse-engineer-anything/blob/main/docs/what-is-rea.md",
+      "description": "Background FAQ, terminology and distinctions between REA and other agent-assisted approaches."
+    },
+    {
+      "id": "ghidra",
+      "title": "Ghidra",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Decompilation, disassembly and headless native binary analysis. A standalone tool, not itself an REA implementation."
+    },
+    {
+      "id": "cutter",
+      "title": "Cutter",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/rizinorg/cutter",
+      "description": "Open-source graphical reverse-engineering environment based on Rizin."
+    },
+    {
+      "id": "jadx",
+      "title": "JADX",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/skylot/jadx",
+      "description": "Decompile and inspect Android APK and DEX files; behavior recovery still needs validation."
+    },
+    {
+      "id": "frida",
+      "title": "Frida",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/frida/frida",
+      "description": "Dynamic instrumentation and call tracing for authorized targets."
+    },
+    {
+      "id": "detect-it-easy",
+      "title": "Detect It Easy",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/horsicq/Detect-It-Easy",
+      "description": "Executable format, compiler and packer identification before deeper analysis."
+    },
+    {
+      "id": "radare2",
+      "title": "radare2",
+      "category": "Tools & foundations",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://github.com/radareorg/radare2",
+      "description": "Command-line binary analysis and debugging toolkit with scripting support."
+    },
+    {
+      "id": "ost2",
+      "title": "OpenSecurityTraining2",
+      "category": "Learning & practice",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://ost2.fyi/",
+      "description": "Training in assembly, architecture, debugging and fundamental reverse engineering."
+    },
+    {
+      "id": "pwn-college",
+      "title": "pwn.college",
+      "category": "Learning & practice",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://pwn.college/",
+      "description": "Browser-accessible security and reversing challenges, with appropriate authorized lab targets."
+    },
+    {
+      "id": "re-for-beginners",
+      "title": "Reverse Engineering for Beginners",
+      "category": "Learning & practice",
+      "scope": "General reverse engineering",
+      "origin": "morluto/awesome-reverse-engineering",
+      "url": "https://beginners.re/",
+      "description": "Free book connecting C/C++ source, compiler output and assembly across architectures."
+    }
+  ]
+}
