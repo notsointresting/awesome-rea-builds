@@ -6,7 +6,7 @@
 
 An independent, evidence-linked atlas of **real REA (Reverse Engineer Anything) implementations, official showcases, research cases and integrations**.
 
-[Explore 44 cases](#full-catalog--44-cases) · [Build Passports](#build-passports) · [Verification policy](METHODOLOGY.md) · [Contribute](CONTRIBUTING.md) · [GitHub Pages setup](docs/GITHUB_PAGES.md)
+[Explore 44 cases](#full-catalog--44-cases) · [Build Passports](#build-passports) · [Learning & resources](docs/RESOURCES.md) · [Verification policy](METHODOLOGY.md) · [Contribute](CONTRIBUTING.md) · [GitHub Pages setup](docs/GITHUB_PAGES.md)
 
 ![Awesome REA Builds website overview](docs/site-preview.svg)
 
@@ -29,6 +29,13 @@ This project is ready for **GitHub Pages**. For this public repository, set **Se
 - Visit: `http://localhost:8080`
 - No Node install, server, API keys, backend or external deployment service is required. The site works offline, with system-font fallbacks.
 - The expected future GitHub Pages address will be `https://notsointresting.github.io/awesome-rea-builds/` **after it is actually published**.
+
+
+## Research resources and learning hub
+
+Beyond the 44 **case passports**, the project offers a separately maintained [curated resources directory](docs/RESOURCES.md) and a [searchable resources panel on the website](https://notsointresting.github.io/awesome-rea-builds/#resources) containing **23 task-based links** to evidence-first REA prompts, discovery indexes, toolchains and learning references. These are **not** counted as verified builds.
+
+The upstream collections are credited individually: [REA-Prompts](https://github.com/JoasASantos/REA-Prompts), [Awesome-REA](https://github.com/reacher-z/Awesome-REA), [Awesome Reverse Engineering](https://github.com/morluto/awesome-reverse-engineering) and [Awesome Reverse Engineer Anything](https://github.com/AIshihzong/awesome-reverse-engineer-anything). Individual resources link to their primary source or original publisher; no third-party README or prompts are copied wholesale.
 
 ## Build Passports
 
