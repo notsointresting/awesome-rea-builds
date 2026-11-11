@@ -1,0 +1,30 @@
+name: Suggest a real REA build
+description: Submit a public implementation with direct evidence of REA use.
+title: "[Build] "
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Public repository
+      placeholder: https://github.com/owner/project
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Direct source evidence for REA involvement
+      description: A README, commit, evidence report or maintainer statement.
+    validations:
+      required: true
+  - type: textarea
+    id: artifact
+    attributes:
+      label: What was implemented?
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: What is missing or unverified?
+    validations:
+      required: true
